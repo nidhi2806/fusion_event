@@ -1,0 +1,31 @@
+GET http://localhost:2824/user-api/get-user
+
+###
+GET http://localhost:2824/user-api/get-user/100
+
+
+###
+POST http://localhost:2824/user-api/create-user
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"kiran",
+    "age":70
+}
+###
+PUT http://localhost:2824/user-api/update-user
+
+###
+DELETE http://localhost:2824/user-api/delete-user
+
+
+
+###
+GET http://localhost:2824/product-api/get-products
+
+###
+POST http://localhost:2824/product-api/create-product
+
+###
+DELETE http://localhost:2824/product-api/delete-product

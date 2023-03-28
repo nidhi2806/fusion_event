@@ -1,0 +1,30 @@
+<!-- Include the PayPal JavaScript SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
+
+<!-- Create a PayPal button -->
+<div id="paypal-button-container"></div>
+
+<script>
+  // Render the PayPal button
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      // Set up the transaction details
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '10.00' // Replace with your actual ticket price
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      // Capture the payment and update the booking record
+      return actions.order.capture().then(function(details) {
+        // Show a success message to the user
+        alert('Payment successful. Thank you for your purchase!');
+        // Redirect to the confirmation page
+        window.location.href = 'confirmation.php';
+      });
+    }
+  }).render('#paypal-button-container');
+</script>

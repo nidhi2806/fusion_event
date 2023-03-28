@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Manager and Meeting Room Booking</title>
+	<link rel="stylesheet" type="text/css" href="./hall.css">
+</head>
+<body>
+  
+	<header>
+		<h1>Event Management Companies and Meeting Room Booking</h1>
+        <nav>
+			<a href="./m.html">Home</a>
+            </nav>
+	</header>
+	
+	<main>
+		<section class="event-manager">
+			<h2>Select an Event Management Company</h2>
+			<form>
+				<label for="event-manager">Choose an Event Management Company:</label>
+				<select id="event-manager" name="event-manager">
+					<option value="">--Select--</option>
+					<option value="manager1">Weddings by blue horse</option>
+					<option value="manager2">Blitz events</option>
+					<option value="manager3">Exotic events</option>
+				</select>
+				<button type="submit">Select</button>
+			</form>
+		</section>
+		
+		<section class="meeting-room">
+			<h2>Book a Meeting Room</h2>
+			<form>
+				<label for="meeting-room">Choose a Meeting Room:</label>
+				<select id="meeting-room" name="meeting-room">
+					<option value="">--Select--</option>
+					<option value="room1">Conference room</option>
+					<option value="room2">Auditorium</option>
+					<option value="room3">Banquet hall</option>
+				</select>
+				<label for="date">Select a Date:</label>
+				<input type="date" id="date" name="date">
+				<label for="start-time">Select a Start Time:</label>
+				<input type="time" id="start-time" name="start-time">
+				<label for="end-time">Select an End Time:</label>
+				<input type="time" id="end-time" name="end-time">
+				<button type="submit">Book</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color:#dba84e;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.event-manager, .meeting-room {
+	background-color: #f1f1f1;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	flex-basis: 45%;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.event-manager h2, .meeting-room h2 {
+	margin-top: 0;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+form label {
+	flex-basis: 100%;
+	margin-top: 10px;
+}
+
+form select, form input[type="date"], form input[type="time"], form button[type="submit"] {
+	flex-basis: 48%;
+	margin-top: 10px;
+}
+h2{
+    color:#dba84e ;
+}

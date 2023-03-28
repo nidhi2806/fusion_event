@@ -1,0 +1,38 @@
+body{
+    background-image:
+    url(https://img.freepik.com/premium-photo/abstract-blur-image-background-shopping-mall-with-light-bokeh-flare-light-bulb_9693-2479.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    position:absolute;
+    font-size:8rem;
+    margin-top:200px;
+    margin-left:550px;
+    color:black;
+}
+p{
+    color:rgb(79, 58, 71);
+    margin-top:320px;
+    margin-left:850px;
+    position:absolute;
+    font-size:2rem;
+    text-align:center;
+    font-family:cursive;
+}
+#down{
+    border: 5px solid rgb(7, 7, 7);
+    position:absolute;
+    margin-top:400px;
+    margin-left:550px;
+    padding: 10px 30px 10px 30px;
+    color:white;
+}
+#doc{
+    border: 5px solid rgb(14, 14, 14);
+    position:absolute;
+    margin-top:400px;
+    margin-left:750px;
+    padding: 10px 30px 10px 30px;
+    color:white;
+}
